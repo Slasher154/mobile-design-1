@@ -1,0 +1,21 @@
+/* Project reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* If we set font size as pixel, user won't be able to change font size on the browser */
+  /* (they can change but it will not affect the root font size as we specify it here as px */
+  // This defines what 1 rem is, basically
+  font-size: 62.5%;
+}
+
+/* Body is parent of all elements */
+/* All styles are inherited */
+body {
+  box-sizing: border-box;
+}
