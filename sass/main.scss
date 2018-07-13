@@ -16,6 +16,7 @@ html {
 
 /* Body is parent of all elements */
 /* All styles are inherited */
+/* Add box-sizing so height+width of element includes padding */
 body {
   box-sizing: border-box;
 }
