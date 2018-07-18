@@ -4,29 +4,24 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
   /* If we set font size as pixel, user won't be able to change font size on the browser */
   /* (they can change but it will not affect the root font size as we specify it here as px */
-  // This defines what 1 rem is, basically
   font-size: 62.5%;
-  font-family: "Helvetica Neue", sans-serif;
-}
+  font-family: "Helvetica Neue", sans-serif; }
 
 /* Body is parent of all elements */
 /* All styles are inherited */
 /* Add box-sizing so height+width of element includes padding */
 body {
   box-sizing: border-box;
-  color: #fff;
-}
+  color: #fff; }
 
 .container {
   width: 548px;
   padding: 30px;
   margin: 30px auto;
   background-color: #c3c3c3;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
