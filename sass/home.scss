@@ -4,110 +4,131 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   /* If we set font size as pixel, user won't be able to change font size on the browser */
   /* (they can change but it will not affect the root font size as we specify it here as px */
+  // This defines what 1 rem is, basically
   font-size: 62.5%;
-  font-family: "Helvetica Neue", sans-serif; }
+  font-family: "Helvetica Neue", sans-serif;
+}
 
 /* Body is parent of all elements */
 /* All styles are inherited */
 /* Add box-sizing so height+width of element includes padding */
 body {
   box-sizing: border-box;
-  color: #fff; }
+  color: #fff;
+}
 
-.container {
-  background-color: #c3c3c3;
-  font-size: 2rem;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4rem 8rem 30rem; }
-
-.title, .info, .logo, .status {
-  background-color: brown;
-  padding: 1rem 2rem; }
-
-.status-info {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 2fr; }
+//home
 
 .home-container {
+  //width: 54.8rem;
+  //padding: 3rem;
+  //margin: 3rem auto;
   background-color: #c3c3c3;
   font-size: 2rem;
+  
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 13rem 40rem 70rem auto 36rem; }
+  grid-template-rows: 13rem 40rem 70rem auto 36rem;
+                    //  1     2     3    4     5
 
-.tournament, .video-live, .news-stand, .partner, .footer {
+}
+
+//all
+
+.tournament,.video-live,.news-stand,.partner,.footer{
   background-color: brown;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+}
 
-.tour-list, .tour-lft-btn, .tour-rth-btn, .tour-btn {
+
+.tour-list,.tour-lft-btn,.tour-rth-btn,.tour-btn{
   background-color: gray;
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.tournament {
+//tournament
+
+.tournament{
   display: grid;
   grid-template-columns: 5rem auto 5rem 8rem;
-  grid-gap: 0.5rem; }
+  grid-gap: 0.5rem;
+}
 
-.tour-btn button {
+.tour-btn button{
   background-color: transparent;
   border: none;
   color: #fff;
-  transform: rotate(90deg); }
+  transform: rotate(90deg);
+}
 
-.video-live {
+//video
+
+.video-live{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+}
 
-.news-stand h1 {
-  padding: 1rem; }
+//news
 
-.news {
+.news-stand h1{
+  padding: 1rem;
+}
+
+.news{
   display: grid;
-  grid-template-rows: repeat(4, 10rem);
-  grid-gap: 0.5rem; }
+  grid-template-rows: repeat(4,10rem);
+  grid-gap: 0.5rem;
+}
 
-.news-list {
+.news-list{
   background-color: gray;
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.partner h1 {
+//partner
+
+.partner h1{
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
-.partner-list {
+.partner-list{
   display: grid;
-  grid-template-rows: repeat(4, 20rem);
+  grid-template-rows: repeat(4,20rem);
   grid-gap: 0.5rem;
-  justify-content: center; }
+  justify-content: center;
+}
 
-.partner-img {
+.partner-img{
   background-color: gray;
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   width: 20rem;
-  height: 20rem; }
+  height: 20rem;
+}
 
-.footer h1 {
-  padding: 1rem; }
+//footer
+
+.footer h1{
+padding: 1rem;
+}
