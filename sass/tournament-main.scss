@@ -96,8 +96,11 @@ min-height: 5rem;
   grid-template-columns: repeat(5,auto);
   grid-template-rows: repeat(4,auto);
 
-  h1,p{
+  h1{
     grid-column: 1/7;
+  }
+  p{
+    grid-column: 1/9;
   }
   .lft-btn{
     grid-column: 7/8;
