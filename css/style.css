@@ -42,82 +42,127 @@ body {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 13rem 40rem auto auto 36rem; }
+  grid-template-rows: auto; }
 
-.tournament, .video-live, .news-stand, .partner, .footer {
+.tournament-preview, .match-table, .select-game, .footer {
   background-color: brown;
   padding: 1rem 2rem; }
 
-.tour-list, .tour-lft-btn, .tour-rth-btn, .tour-btn {
-  background-color: gray;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center; }
-
-.tournament {
+.tour-menu {
   display: grid;
-  grid-template-columns: 5rem auto 5rem 8rem;
-  grid-gap: 0.5rem; }
-
-.tour-btn button {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  transform: rotate(90deg); }
-
-.video-live {
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
   text-align: center; }
 
-.news-stand h1 {
-  padding: 1rem; }
+.hot-btn, .ongoing-btn, .comming-btn, .finish-btn {
+  background-color: black;
+  color: #fff;
+  border: none;
+  min-width: 15.5rem;
+  min-height: 5rem; }
 
-.news-stand .news {
+.tour-info {
   display: grid;
-  grid-template-rows: repeat(4, 10rem);
-  grid-gap: 0.5rem; }
-  .news-stand .news .news-list {
-    background-color: gray;
-    padding: 0 1.5rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(4, auto); }
+  .tour-info h1, .tour-info p {
+    grid-column: 1/7; }
+  .tour-info .lft-btn {
+    grid-column: 7/8;
+    min-width: 4rem;
+    margin: 0.5rem; }
+  .tour-info .rth-btn {
+    grid-column: 8/9;
+    min-width: 4rem;
+    margin: 0.5rem; }
+  .tour-info .tour {
+    grid-area: 3/1/3/9;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 2rem; }
-    .news-stand .news .news-list .news-img {
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, auto); }
+    .tour-info .tour .tour-img {
+      display: flex;
+      background-color: gray;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      grid-row: 1/5;
+      min-height: 20rem; }
+    .tour-info .tour .team-count {
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      padding: 1rem 0rem; }
-    .news-stand .news .news-list .news-info {
-      justify-content: center;
-      padding: 1rem 0rem; }
-      .news-stand .news .news-list .news-info a {
+      grid-row: 1/4; }
+      .tour-info .tour .team-count p {
+        font-size: 7rem; }
+      .tour-info .tour .team-count .join-btn {
+        background-color: lightsalmon;
+        border: none;
         color: #fff;
-        text-decoration: none;
-        font-size: 2.4rem; }
-    .news-stand .news .news-list .news-btn {
-      justify-content: right; }
-  .news-stand .news .news-more {
-    min-height: 3rem;
-    min-width: 3rem; }
+        min-height: 5rem; }
+    .tour-info .tour .prize {
+      display: flex;
+      background-color: lightgreen;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      grid-area: 4/2/5/3;
+      min-height: 5rem; }
 
-.partner h1 {
+.match-table h1 {
+  text-align: center;
+  padding: 1rem; }
+
+.match-table .match-menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  text-align: center; }
+  .match-table .match-menu .past-btn, .match-table .match-menu .today-btn, .match-table .match-menu .comming-btn {
+    background-color: black;
+    color: #fff;
+    border: none;
+    min-width: 20rem;
+    min-height: 5rem; }
+
+.match-table .match-list .match {
+  display: grid;
+  padding: 0 1.5rem;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 6rem;
+  justify-content: center;
+  width: 100%; }
+  .match-table .match-list .match .match-img {
+    display: flex;
+    background-color: gray;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 6rem;
+    height: 6rem; }
+  .match-table .match-list .match p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+
+.select-game h1 {
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
   padding: 1rem; }
 
-.partner-list {
+.game-table {
   display: grid;
-  grid-template-rows: repeat(4, 20rem);
+  grid-template-columns: 1fr 1fr;
   grid-gap: 0.5rem;
-  justify-content: center; }
+  justify-items: center; }
 
-.partner-img {
+.game-img {
   background-color: gray;
   display: flex;
   text-align: center;
